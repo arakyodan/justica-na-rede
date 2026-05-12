@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justiça na Rede - Combate ao Cyberbullying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Justiça na Rede</h1>
+        <p>Projeto de Intervenção Social - UNP</p>
+    </header>
+
+    <main>
+        <section id="lei">
+            <h2>A Nova Lei (Art. 146-A CP)</h2>
+            <p>O Cyberbullying agora é crime tipificado pela Lei 14.811/2024.</p>
+        </section>
+
+        <section id="simulador">
+            <h2>Simulador Jurídico</h2>
+            <p>Selecione uma situação para entender as implicações legais:</p>
+            <select id="situacao">
+                <option value="bullying">Intimidação repetitiva online</option>
+                <option value="ofensa">Ofensa à honra (Xingamentos)</option>
+            </select>
+            <button onclick="analisar()">Analisar Caso</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Wellington Jonatan Pontes de Sousa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
