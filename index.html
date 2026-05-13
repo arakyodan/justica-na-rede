@@ -13,41 +13,44 @@
     </header>
 
     <main>
+        <!-- Seção Informativa sobre a Lei -->
         <section id="lei">
             <h2>A Nova Lei (Art. 146-A CP)</h2>
-            <p>O Cyberbullying agora é crime tipificado pela Lei 14.811/2024.</p>
+            <p>O Cyberbullying agora é crime tipificado pela <strong>Lei 14.811/2024</strong>. A intimidação sistemática no ambiente virtual pode levar à reclusão e multa.</p>
         </section>
 
+        <!-- Seção do Simulador Jurídico -->
         <section id="simulador">
             <h2>Simulador Jurídico</h2>
-            <p>Selecione uma situação para entender as implicações legais:</p>
+            <p>Selecione uma situação para entender as implicações legais e como proceder:</p>
+            
             <select id="situacao">
-                <option value="bullying">Intimidação repetitiva online</option>
-                <option value="ofensa">Ofensa à honra (Xingamentos)</option>
-            </select><!-- Dentro da section id="simulador" -->
-<select id="situacao">
-    <option value="">-- Selecione sua situação --</option>
-    <option value="bullying">Intimidação repetitiva e humilhação (Cyberbullying)</option>
-    <option value="ofensa">Xingamentos e ofensas à honra (Injúria/Difamação)</option>
-    <option value="stalking">Perseguição persistente e invasão de privacidade</option>
-    <option value="fake">Criação de perfis falsos com meu nome/foto</option>
-    <option value="vazamento">Vazamento de fotos ou vídeos íntimos</option>
-</select>
-<button onclick="analisar()">Analisar Caso</button>
-<p id="resultado"></p>
+                <option value="">-- Selecione sua situação --</option>
+                <option value="bullying">Intimidação repetitiva e humilhação (Cyberbullying)</option>
+                <option value="ofensa">Xingamentos e ofensas à honra (Injúria/Difamação)</option>
+                <option value="stalking">Perseguição persistente e invasão de privacidade</option>
+                <option value="fake">Criação de perfis falsos com meu nome/foto</option>
+                <option value="vazamento">Vazamento de fotos ou vídeos íntimos</option>
+            </select>
 
-<!-- Nova Seção de Ajuda -->
-<section id="ajuda">
-    <h2>Como Pedir Ajuda?</h2>
-    <div class="passos">
-        <p><strong>1. Preserve as Provas:</strong> Tire prints das mensagens, comentários e URLs dos perfis. Não apague nada!</p>
-        <p><strong>2. Ata Notarial:</strong> Vá a um Cartório de Notas para validar os prints como prova jurídica.</p>
-        <p><strong>3. Registro de Ocorrência:</strong> Procure a Delegacia de Polícia Civil mais próxima ou registre no site da Delegacia Virtual.</p>
-        <p><strong>4. Canais de Denúncia:</strong> Disque 100 ou 180 para casos graves de violação de direitos humanos.</p>
-    </div>
-</section>
             <button onclick="analisar()">Analisar Caso</button>
-            <p id="resultado"></p>
+            
+            <!-- Onde aparecerá o resultado da análise -->
+            <div id="resultado" style="margin-top: 20px;"></div>
+            
+            <!-- Onde aparecerá o botão de ajuda específica via JS -->
+            <div id="ajuda-especifica" style="margin-top: 15px;"></div>
+        </section>
+
+        <!-- Seção Geral de Ajuda -->
+        <section id="ajuda">
+            <h2>Guia Geral de Defesa</h2>
+            <div class="passos">
+                <p><strong>1. Preserve as Provas:</strong> Tire prints das mensagens, comentários e URLs dos perfis. Não apague nada!</p>
+                <p><strong>2. Ata Notarial:</strong> Vá a um Cartório de Notas para validar os prints como prova jurídica oficial.</p>
+                <p><strong>3. Registro de Ocorrência:</strong> Procure a Delegacia de Polícia Civil mais próxima ou registre no site da Delegacia Virtual.</p>
+                <p><strong>4. Canais de Denúncia:</strong> Disque 100 ou 180 para casos graves de violação de direitos humanos.</p>
+            </div>
         </section>
     </main>
 
@@ -55,6 +58,10 @@
         <p>Desenvolvido por Wellington Jonatan Pontes de Sousa</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
+    
+    <!-- DICA: Se você criou a conta no Tawk.to ou Crisp, cole o código do Chatbot logo ABAIXO desta linha -->
+
 </body>
 </html>
